@@ -18,7 +18,7 @@ const devConfig = {
     new ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        helloReact: 'helloReact@http://localhost:8081/remoteEntry.js',
+        homePage: 'homePage@http://localhost:8081/remoteEntry.js',
       },
       shared: packageJson.dependencies,
     }),

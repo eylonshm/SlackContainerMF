@@ -1,6 +1,6 @@
 import React from 'react'
 import HomePage from './components/HomePage'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 
 const Header = () => (
   <div>
@@ -16,7 +16,7 @@ export default () => {
       <Header />
       <hr />
       <Routes>
-        <Route path='/' element={<HomePage />} />
+        <Route path='/*' element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   )
